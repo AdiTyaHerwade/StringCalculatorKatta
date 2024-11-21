@@ -1,5 +1,5 @@
-import { TextField } from '@material-ui/core';
-import { Button } from '@mui/material';
+
+
 import React, { useState } from 'react';
 
 
@@ -38,8 +38,8 @@ export default function NewComp() {
      return total }
  return (
      <div>
-         <TextField type='text' onChange={handleChange} value={inputVal} sx={{ margin: "2px", }} label={"user input"} /> 
-         <Button variant='outlined' onClick={handleClck}>OnClk</Button>
+         <input type='text' onChange={handleChange} value={inputVal}  sx={{ margin: "2px", }} label={"user input"} /> 
+         <button variant='outlined' onClick={handleClck}>OnClk</button>
           </div> 
           )
         }
