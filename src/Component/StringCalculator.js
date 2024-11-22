@@ -5,16 +5,19 @@ import React, { useState } from 'react';
 
 export default function NewComp() {
  const [inputVal, setInputVal] = useState("")
+ const [addition, setAddition] = useState(0)
 
  const handleChange = (e) => { // console.log(e.target.value); 
     setInputVal(e.target.value) 
 }
  
     const handleClck = () => {
-         console.log(inputVal); 
+         console.log(inputVal,typeof(inputVal)); 
          if (inputVal) { 
-            const arr = inputVal.split(/[\n,]/)
+            const arr = inputVal.split(/[\\n,]/);
+            console.log(arr);
              let res = add(arr)
+             setAddition(res)
               console.log(res);
              } else { 
                 console.log("No Input To Calculate");
@@ -39,9 +42,16 @@ export default function NewComp() {
  return (
      <div>
          <input type='text' onChange={handleChange} value={inputVal}  sx={{ margin: "2px", }} label={"user input"} /> 
-         <button variant='outlined' onClick={handleClck}>OnClk</button>
+         <button variant='outlined' onClick={handleClck}>Add</button>
+         <button variant='outlined' onClick={()=>setInputVal("")}>Clear</button>
+         <div>
+            Total Addition of input fields number is {addition}
+         </div>
           </div> 
           )
         }
 
 
+
+
+        
