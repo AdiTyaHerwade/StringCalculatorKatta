@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,21 +11,45 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #878d99;
+  /* background-color: #878d99; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  min-width: 60px;
+  margin: 15px 10px;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.String {
+  padding-top: 15vh;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/710/648/880/equations-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.userMsg {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: 0.3px solid black;
+  padding: 10px;
+  padding-top: 0px;
 }
 
 @keyframes App-logo-spin {
