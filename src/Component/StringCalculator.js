@@ -98,7 +98,7 @@ export default function NewComp() {
         />
         <br></br>
         <button className="btn" variant="outlined" onClick={handleClck}>
-          Add
+          Addition
         </button>
         <button
           className="btn"
